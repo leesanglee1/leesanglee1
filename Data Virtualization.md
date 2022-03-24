@@ -20,25 +20,25 @@
 
 ### Decision
 #### Vendors select for POC:
-  Tibco: https://www.tibco.com/products/data-virtualization
+##### Tibco: https://www.tibco.com/products/data-virtualization
     Tibco DV is selected for POC.
-  IBM: https://www.ibm.com/docs/en/cloud-paks/cp-data/4.0?topic=overview
+##### IBM: https://www.ibm.com/docs/en/cloud-paks/cp-data/4.0?topic=overview
     IBM “Cloud Pak for Data” is selected for POC.
-  Denodo: https://www.denodo.com/en/data-virtualization/overview 
+##### Denodo: https://www.denodo.com/en/data-virtualization/overview 
     Denodo platform supports all the features but is too costly on per core basis compare to Tibco/IBM.
-  Red Hat: 
+##### Red Hat: 
     Acquired by IBM, so keeping IBM as only vendor.
-  Oracle: 
+##### Oracle: 
     Their solution is primarily for their own platform and brings data from different data sources.
-  Atscale: https://www.atscale.com/solutions/ 
+##### Atscale: https://www.atscale.com/solutions/ 
     Supports data virtualization for only sql based data sources to create OLAP cubes.
-  Data Virtuality: https://datavirtuality.com/en/ 
+##### Data Virtuality: https://datavirtuality.com/en/ 
     Preferred way for data virtualization is through materializing entire data set in cache. Single server deployment not supporting clustering as of       now. 
-  Actifio: https://www.actifio.com/platform/ 
+##### Actifio: https://www.actifio.com/platform/ 
     Supports virtualization through data cloning instead of data federation.
-  Presto: https://prestodb.io/ 
+##### Presto: https://prestodb.io/ 
     Open source sql engine for big data with ability to connect to various data sources. Not a data virtualization platform and misses key features like caching.
-  Google: https://cloud.google.com/bigquery 
+##### Google: https://cloud.google.com/bigquery 
     Bigquery Supports integration with various data sources, but it is not data virtualization platform.
 
 
