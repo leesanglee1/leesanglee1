@@ -1,32 +1,65 @@
 # Data Virtualization
 ## Summary
 ### Issue
-Describe why we need a tool in this domain, any context necessary. 
-Example: We need to store secrets, such as passwords, private keys, and tokens.
+Data virtualization technology can be used to create virtualized and integrated views of data in memory (rather than executing data movement and physically storing integrated views in a target data structure), and provides a layer of abstraction above the physical implementation of data. (Gartner 2016)
 
-If there are sub-domains that might require unique tools, describe those here as well.
-Example: Secrets used by an individual vs secrets used by a system would have different solutions.
+Industry Use Cases:
+  BI and Big Data 
+    Single view of entity
+    Real time analytics and reporting
+    Performance dashboards
+    Virtual Data Marts
+  Operational
+    Real-time operational views - Ex. summary of incidents, ranking, matrix of incident assignment, project status etc.
+    Self-Service portal integration
+    Enable Agile Business Intelligence - Ex. Operational decision support such as inventory control, risk management
+  Data Hub
+    Data Services - Information as Service (IaaS), Information Feeds, Logical data Abstraction, Virtual Data Layer, Virtual MDM
+    Provide access to a larger variety of data, including video, email and json documents and other Big Data sources often stored in platforms such as Hadoop.
+    Integrate with Cloud Applications, such as Salesforce.com and cloud data services, such as GCP, Azure, AWS.
 
 ### Decision
-List the selected solution, including a link to the official website. 
-If there are multiple solutions, describe a precise scenario where the reader should apply that solution so that they may make an informed choice.
-Example: [Bitwarden](https://go.bitwarden.com/password-management-for-business-teams-organizations/?utm_source=google&utm_medium=cpc&utm_campaign=AW_USCA_NU_CL_Bitwarden_en_GSN_DTMB_Brand_KW:Brand_Exact&utm_content=475928674547&utm_term=bitwarden&gclid=CjwKCAjwzaSLBhBJEiwAJSRoktT5RvR71MB2vDwV2wzKL5Jo5ViWtgN-2Y9qC6wANnKngqeRQ5r3jRoCM1AQAvD_BwE) for user-oriented secrets, [Vault by Hashicorp](https://www.vaultproject.io/) for system-oriented secrets
+Vendors select for POC:
+  Tibco: https://www.tibco.com/products/data-virtualization
+    Tibco DV is selected for POC.
+  IBM: https://www.ibm.com/docs/en/cloud-paks/cp-data/4.0?topic=overview
+    IBM “Cloud Pak for Data” is selected for POC.
+  Denodo: https://www.denodo.com/en/data-virtualization/overview 
+    Denodo platform supports all the features but is too costly on per core basis compare to Tibco/IBM.
+  Red Hat: 
+    Acquired by IBM, so keeping IBM as only vendor.
+  Oracle: 
+    Their solution is primarily for their own platform and brings data from different data sources.
+  Atscale: https://www.atscale.com/solutions/ 
+    Supports data virtualization for only sql based data sources to create OLAP cubes.
+  Data Virtuality: https://datavirtuality.com/en/ 
+    Preferred way for data virtualization is through materializing entire data set in cache. Single server deployment not supporting clustering as of       now. 
+  Actifio: https://www.actifio.com/platform/ 
+    Supports virtualization through data cloning instead of data federation.
+  Presto: https://prestodb.io/ 
+    Open source sql engine for big data with ability to connect to various data sources. Not a data virtualization platform and misses key features like caching.
+  Google: https://cloud.google.com/bigquery 
+    Bigquery Supports integration with various data sources, but it is not data virtualization platform.
+
 
 ### Status
-Select one: 
-- Hold: if an assessment is not currently in progress and no decision has been made yet.
-- Assess: if an assessment of the products is currently underway.
-- Trial: if a trial of a product is currently underway.
-- Use: if a decision has been made and adopted by the enterprise.
+Assess: TIBCO was selected
 
 Indicate how open you are to reviewing new options in this space going forward.
 
 ## Details
 ### Requirements
-List out requirements for the tools, any assumptions and/or constraints. Example: individual secret management must be capable of auto-filling the username/password into website forms.
+Major criteria used for evaluation
+  Support for cloud and on-premise
+  Data Source connectors supported out of box
+  Methods supported to access data from platform
+  Governance and security capabilities
+  Development and runtime capabilities
+  Metadata management and integration with external tools
+  
 ### Considered Solutions
-List out the options/products that are available in this space and will be / have been assessed. Example: Bitwarden, LastPass, 1Password.
-You do not need to complete full trials with each position listed. If they were in any way considered, list them here. Then, in the below notes section, describe the level of investigation you committed to the option and why.
+A list of possible Data Virtualization vendors were evaluated on paper and assessed for key requirements. TIBCO, IBM, and Denodo were selected for the actual POC activities.
+
 ### Rationale
 Describe key reasons behind the decision, either for one option or against the others. Example: Bitwarden is open source and has a strong security track-record.
 ### Consequences
