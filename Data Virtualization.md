@@ -4,16 +4,16 @@
 #### Data virtualization technology can be used to create virtualized and integrated views of data in memory (rather than executing data movement and physically storing integrated views in a target data structure), and provides a layer of abstraction above the physical implementation of data. (Gartner 2016)
 
 #### Industry Use Cases:
-  ##### BI and Big Data 
-    ###### Single view of entity
-    ###### Real time analytics and reporting
-    ###### Performance dashboards
-    ###### Virtual Data Marts
-  ##### Operational
+##### BI and Big Data 
+Single view of entity
+  Real time analytics and reporting
+  Performance dashboards
+  Virtual Data Marts
+##### Operational
     ###### Real-time operational views - Ex. summary of incidents, ranking, matrix of incident assignment, project status etc.
     ###### Self-Service portal integration
     ###### Enable Agile Business Intelligence - Ex. Operational decision support such as inventory control, risk management
-  ##### Data Hub
+##### Data Hub
     ###### Data Services - Information as Service (IaaS), Information Feeds, Logical data Abstraction, Virtual Data Layer, Virtual MDM
     ###### Provide access to a larger variety of data, including video, email and json documents and other Big Data sources often stored in platforms such as Hadoop.
     ###### Integrate with Cloud Applications, such as Salesforce.com and cloud data services, such as GCP, Azure, AWS.
