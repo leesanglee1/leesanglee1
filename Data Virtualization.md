@@ -5,18 +5,18 @@
 
 #### Industry Use Cases:
 ##### BI and Big Data 
-Single view of entity
-  Real time analytics and reporting
-  Performance dashboards
-  Virtual Data Marts
+###### Single view of entity
+###### Real time analytics and reporting
+###### Performance dashboards
+###### Virtual Data Marts
 ##### Operational
-    ###### Real-time operational views - Ex. summary of incidents, ranking, matrix of incident assignment, project status etc.
-    ###### Self-Service portal integration
-    ###### Enable Agile Business Intelligence - Ex. Operational decision support such as inventory control, risk management
+###### Real-time operational views - Ex. summary of incidents, ranking, matrix of incident assignment, project status etc.
+###### Self-Service portal integration
+###### Enable Agile Business Intelligence - Ex. Operational decision support such as inventory control, risk management
 ##### Data Hub
-    ###### Data Services - Information as Service (IaaS), Information Feeds, Logical data Abstraction, Virtual Data Layer, Virtual MDM
-    ###### Provide access to a larger variety of data, including video, email and json documents and other Big Data sources often stored in platforms such as Hadoop.
-    ###### Integrate with Cloud Applications, such as Salesforce.com and cloud data services, such as GCP, Azure, AWS.
+###### Data Services - Information as Service (IaaS), Information Feeds, Logical data Abstraction, Virtual Data Layer, Virtual MDM
+###### Provide access to a larger variety of data, including video, email and json documents and other Big Data sources often stored in platforms such as Hadoop.
+###### Integrate with Cloud Applications, such as Salesforce.com and cloud data services, such as GCP, Azure, AWS.
 
 ### Decision
 #### Vendors select for POC:
