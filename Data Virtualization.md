@@ -98,7 +98,12 @@ A list of possible Data Virtualization vendors were evaluated on paper and asses
 
 
 ### Rationale
-Describe key reasons behind the decision, either for one option or against the others. Example: Bitwarden is open source and has a strong security track-record.
+#### Key considerations: 
+    Data source connectors
+    Deployment options
+    Collibra metadata integraion
+    Licensing costs
+    
 ### Consequences
 Describe any implications of the decision, and any drawbacks. Example: LastPass will be decommissioned in favor of BitWarden and we will need to provide a migration path.
 
