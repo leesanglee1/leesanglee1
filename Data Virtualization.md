@@ -58,7 +58,44 @@ Major criteria used for evaluation
   Metadata management and integration with external tools
   
 ### Considered Solutions
-A list of possible Data Virtualization vendors were evaluated on paper and assessed for key requirements. TIBCO, IBM, and Denodo were selected for the actual POC activities.
+A list of possible Data Virtualization vendors were evaluated on paper and assessed for key requirements in round one. TIBCO, IBM, and Denodo were selected for the actual POC activities in round two.
+
+#### Data Virtualization Platform Features Comparison Criteria
+##### Data Abstraction:
+    The major datasources connection at the optimized mode:
+    Database (Oracle/Netezza/MS SQL Server)
+    Big Data 
+    Application (SAP/SFDC/SharePoint)
+    Cloud(GCP/AWS)
+    Others(LDAP)
+    Build own
+    Sources technical aspects isolation  
+    Metadata management
+    Metadata re-introspection
+    Source change report
+    Source Statistics gathering 
+
+##### Data Virtualization Development and Runtime
+    Native functions support to data sources
+    Date process pushdown
+    Approach to federation(Join across data sources)
+    Caching strategy
+    Caching place
+    Cache refresh approaches
+    Deployment/Migration
+    Data Publishing (JDBC/ODBC/ADO.Net/Web Service)
+    Runtime features
+    MPP
+    Scheduling
+    Monitor/logging
+    High Availability and Clustering
+    Data Governance and Security
+    Data lineage
+    Metadata Catalog
+    Security setting
+
+##### Cloud Strategy
+
 
 ### Rationale
 Describe key reasons behind the decision, either for one option or against the others. Example: Bitwarden is open source and has a strong security track-record.
