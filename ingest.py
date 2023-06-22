@@ -112,7 +112,7 @@ if __name__ == "__main__":
     load_dotenv()
 
     # Step 1: Parse PDF
-    file_path = "data/how-to-justin.pdf"
+    file_path = "user/leele/documents/gen-ai/testdata/Design excellence _ Architect guide.pdf"
     raw_pages, metadata = parse_pdf(file_path)
 
     # Step 2: Create text chunks
